@@ -404,7 +404,9 @@
   }
   function iniciar() {
     document.getElementById('btnEjemplo').addEventListener('click', function () { cargarDatos(clon(EJ), true); });
-    document.getElementById('btnLimpiar').addEventListener('click', function () { if (confirm('Se borrarán los datos actuales de esta página. ¿Continuar?')) cargarDatos(vacio(), false); });
+    function limpiar() { if (confirm('Se borrarán los datos actuales de esta página (incluido el ejemplo) y quedará una plantilla vacía. ¿Continuar?')) cargarDatos(vacio(), false); }
+    document.getElementById('btnLimpiar').addEventListener('click', limpiar);
+    document.getElementById('btnBorrarAviso').addEventListener('click', limpiar);
     document.getElementById('btnGuardar').addEventListener('click', descargarJSON);
     document.getElementById('btnCargar').addEventListener('click', function () { document.getElementById('archivo').click(); });
     document.getElementById('archivo').addEventListener('change', function (ev) {

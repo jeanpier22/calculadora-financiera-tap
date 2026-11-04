@@ -100,3 +100,7 @@ svg.graf text { fill: var(--muted); font-size: 11px; }
 svg.graf .t { fill: var(--ink); font-weight: 600; }
 .pie { color: var(--muted); font-size: 12.5px; text-align: center; padding: 18px 0 30px; }
 @media print { .top, nav.pasos { display: none; } .layout { display: block; } }
+
+.btn-aviso { margin-left: 8px; border: 1px solid #b8860b; background: #fff; color: #5c4600; border-radius: 8px; padding: 4px 12px; font-weight: 650; font-size: 13px; }
+.btn-aviso:hover { background: #ffe9a8; }
+@media (prefers-color-scheme: dark) { :root:not([data-tema="claro"]) .btn-aviso { background: #4a3f16; color: #f2dc93; border-color: #6a5a20; } }

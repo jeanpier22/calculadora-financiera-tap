@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Calculadora de proyección financiera - TAP</title>
+  <link rel="icon" href="data:,">
   <meta name="description" content="Calculadora local de proyección financiera a 3 años (capítulo 6 del TAP): explica cada concepto, calcula VAN, TIR y punto de equilibrio y genera el informe en PDF.">
   <link rel="stylesheet" href="css/app.css">
 </head>
@@ -12,14 +13,15 @@
     <div class="in">
       <h1>Calculadora de proyección financiera<small>Capítulo 6 del TAP · Proyecto Integrador · 3 años</small></h1>
       <div class="acciones">
+        <button class="btn" id="btnLimpiar" type="button">Borrar ejemplo / limpiar</button>
         <button class="btn" id="btnEjemplo" type="button">Cargar ejemplo</button>
-        <button class="btn" id="btnLimpiar" type="button">Empezar vacío</button>
         <button class="btn" id="btnGuardar" type="button">Guardar datos</button>
         <button class="btn" id="btnCargar" type="button">Abrir datos</button>
         <input type="file" id="archivo" accept="application/json,.json" hidden>
         <button class="btn" id="btnExpl" type="button">Mostrar explicaciones</button>
         <a class="btn" href="Informe_ejemplo.pdf" target="_blank" rel="noopener">Ver informe de ejemplo</a>
-        <a class="btn" href="Plantilla_Proyeccion_Financiera_TAP.xlsx" download>Plantilla Excel</a>
+        <a class="btn" href="Plantilla_Proyeccion_Financiera_TAP.xlsx" download>Excel vacío</a>
+        <a class="btn" href="Plantilla_Proyeccion_Financiera_TAP_con_ejemplo.xlsx" download>Excel con ejemplo</a>
         <button class="btn primario" id="btnPDF" type="button">Generar informe (PDF)</button>
       </div>
     </div>
@@ -28,7 +30,7 @@
   <div class="layout">
     <nav class="pasos" id="nav" aria-label="Secciones"></nav>
     <main id="contenido">
-      <div class="aviso" id="aviso"><b>Ejemplo didáctico:</b> los datos cargados son ficticios (no corresponden a ningún grupo ni a datos reales). Cambie cualquier celda amarilla y vea cómo se recalcula todo; use «Empezar vacío» para ingresar los datos de su proyecto.</div>
+      <div class="aviso" id="aviso"><b>Ejemplo didáctico:</b> los datos cargados son ficticios (no corresponden a ningún grupo ni a datos reales). Cambie cualquier celda amarilla y vea cómo se recalcula todo; cuando termine de explorar, borre el ejemplo para ingresar los datos de su proyecto. <button type="button" id="btnBorrarAviso" class="btn-aviso">Borrar ejemplo y empezar</button></div>
       <div id="secciones"></div>
       <div id="resultados"></div>
       <p class="pie">Montos en soles, sin IGV · proyección anual a 3 años · los datos se guardan solo en este navegador.</p>

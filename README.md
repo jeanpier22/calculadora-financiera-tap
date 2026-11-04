@@ -9,7 +9,8 @@ Herramienta de apoyo para la unidad didáctica **Proyecto Integrador**. Permite 
 | Archivo | Para qué sirve |
 |---|---|
 | `index.html` | Calculadora en el navegador. Se abre con doble clic y funciona sin internet. |
-| `Plantilla_Proyeccion_Financiera_TAP.xlsx` | La misma lógica en Excel, con fórmulas vivas (12 hojas). |
+| `Plantilla_Proyeccion_Financiera_TAP.xlsx` | La misma lógica en Excel, con fórmulas vivas (12 hojas), **en blanco** para llenar con los datos del proyecto. |
+| `Plantilla_Proyeccion_Financiera_TAP_con_ejemplo.xlsx` | La misma plantilla con el ejemplo ficticio cargado, para ver cómo se llena. |
 | `Informe_ejemplo.pdf` | Resultado del botón «Generar informe (PDF)» con los datos del ejemplo. |
 | `js/`, `css/`, `lib/` | Código de la página y librerías para generar el PDF (incluidas, sin dependencias externas). |
 
@@ -17,7 +18,7 @@ Herramienta de apoyo para la unidad didáctica **Proyecto Integrador**. Permite 
 
 1. Abra `index.html`. Lea el recuadro «¿Qué es y cómo se calcula?» de cada sección.
 2. Cambie las celdas amarillas (precios, costos, demanda…) y observe cómo se recalculan los resultados.
-3. Pulse **Empezar vacío** para ingresar los datos de su proyecto. En cada tabla puede agregar o quitar filas.
+3. Pulse **Borrar ejemplo / limpiar** para dejar la plantilla vacía e ingresar los datos de su proyecto. En cada tabla puede agregar o quitar filas. **Cargar ejemplo** lo vuelve a poner.
 4. **Guardar datos** descarga un archivo `.json` para continuar después con **Abrir datos**.
 5. **Generar informe (PDF)** descarga el informe con tablas y figuras numeradas, listo para adjuntar al capítulo 6.
 
